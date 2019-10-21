@@ -9,6 +9,9 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import arem.lab5.demo.POJOS.Usuario;
+import arem.lab5.demo.Repository.UserR;
+
 @Controller
 public class UserController {
     @Autowired

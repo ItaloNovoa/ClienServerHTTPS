@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Arep-Patrones Arquitecturales</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+    <h1>Result</h1>
+    <p  th:text="'el usuario '+ ${usuario.name}+' '+${usuario.lastName}" />
+    <p>ya fue registrado anteriormente </p> 
+    <a href="/">Submit another usuario</a>
+    <a href="/test1">Ver la base de datos </a>
+
+</body>
+</html>

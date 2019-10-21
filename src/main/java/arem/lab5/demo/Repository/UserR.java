@@ -1,6 +1,9 @@
-package arem.lab5.demo;
+package arem.lab5.demo.Repository;
+
 import java.sql.SQLException;
 import java.util.*;
+
+import arem.lab5.demo.POJOS.Usuario;
 
 
 public interface UserR {
