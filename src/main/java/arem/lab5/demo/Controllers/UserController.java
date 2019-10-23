@@ -20,7 +20,7 @@ public class UserController {
     @GetMapping("/")
     public String index(Model model) {
         model.addAttribute("usuario", new Usuario());
-        return "index";
+        return "index2";
     }
 
     @PostMapping("/")
@@ -33,5 +33,15 @@ public class UserController {
         }
         
     }
-    
+
+    @PostMapping("/Ingresar")
+    public String Logear(@ModelAttribute Usuario usuario) throws SQLException {
+        Boolean b=userR.logear(usuario.getName(), usuario.getLastName());
+        if(b){
+            return "result";
+        }else{
+            return "repetido";
+        }
+        
+    }    
 }

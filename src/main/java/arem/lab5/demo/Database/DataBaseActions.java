@@ -97,4 +97,9 @@ public class DataBaseActions implements UserR {
 		}
 		
 	}
+
+	@Override
+	public Boolean logear(String name, String lastName) throws SQLException {
+		return null;
+	}
 }
